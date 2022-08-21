@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="Registration.js"></script>
+    <title>Registration</title>
+<body >
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="C:\Swabhav-training-repo\HTML CSS JS\Home\Home.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Something else here</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	<h2 id="h2" style="text-align: center">Registration form</h2>
+	<form name="myForm" action="C:\Swabhav-training-repo\HTML CSS JS\Feed\Feed.html" method="post" onsubmit="return validateForm() ">
+		<div class="container" id="center">
+        
+			<label style="color: white;"><b>First Name</b></label>
+			<input id ="text"type="text" placeholder="First Name " name="firstname" required>
+            
+
+			<label style="color:white"><b>Last Name</b></label>
+			<input id ="text" type="text" placeholder="Last name " name="lastname" required>
+
+            <label style="color: white;"><b>Email</b></label>
+			<input id ="text"type="text" placeholder="Enter Username" name="uname" required>
+
+            <label style="color:white"><b>Password</b></label>
+			<input id ="text" type="password" placeholder="Enter Password" name="psw" required>
+
+            <label style="color:white"><b>Confirm Password</b></label>
+			<input id ="text" type="password" placeholder="Enter Password" name="cpsw" required>
+
+            <label style ="color: white;"for="birthdaytime"><b>Birthday (date and time):</b></label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+            <label id="clr" style="color:white"><b>Pick your color</b></label>
+            <input type="color" id="colorpicker" name="colorpicker"><br>
+
+            <label style="color: white;"><b>Male</b></label>
+             <input type="radio" id="html" name="fav_language" value="HTML">
+
+            <label style="color: white;"><b>Female</b></label>
+             <input type="radio" id="html" name="fav_language" value="HTML"><br>
+			<br>
+			<label style="color: white;"> Subjects</label>
+			<select>
+				<option value="JAVA">JAVA</option>
+
+				<option value="COA">COA</option>
+
+				<option value="OS">OS</option>
+
+				<option value="C++">C++</option>
+			</select>
+
+
+			<button type="submit"  class="btn btn-success">Register</button>
+
+			<input id ="checkbox" style="color: white;"type="checkbox" checked="checked"> Remember me
+		</div>
+
+		
+	</form>
+
+</body>
+
+</html>

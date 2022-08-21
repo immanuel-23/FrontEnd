@@ -1,0 +1,26 @@
+.container {
+    padding: 16px;
+}
+h1,h2{
+    text-align: center;
+}
+h3{
+    text-align:center;
+}
+hr{
+    border:solid;
+    opacity: 0.7;
+
+}
+h1{
+    border-radius: 25px;
+    background-color: white;
+    border: solid;
+}
+body{
+    background-image: url(image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
